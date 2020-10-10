@@ -13,7 +13,11 @@
 
 
 
-  
+  <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+<script custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js" async=""></script>
+<script custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js" async=""></script>
 
 <script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js" async=""></script>
 
@@ -143,6 +147,26 @@
           </label>
         </div>
 
+        <a href="travel-results.amp.html" class="ampstart-btn travel-input-big rounded center bold white block col-12" on="
+            tap:AMP.setState({
+                ui_reset: false,
+                ui_filterPane: false,
+                query_query: fields_query,
+                fields_query_edited: false,
+                query_departure: fields_departure,
+                fields_departure_edited: false,
+                query_return: fields_return,
+                fields_return_edited: false,
+                query_maxPrice: fields_maxPrice,
+                fields_maxPrice_edited: false,
+                query_city: fields_city,
+                fields_city_edited: false,
+                query_type: fields_type,
+                fields_type_edited: false,
+                query_sort: fields_sort,
+                fields_sort_edited: false,
+            })
+          ">
           Find Adventures & Tours
         </a>
       <!--/ Search Form -->
@@ -587,7 +611,25 @@
           <input class="travel-input travel-input-big line-height-2 block col-12 flex-auto rounded-left" type="text" name="query" placeholder="Where would you like to go?" on="change:AMP.setState({fields_query: event.value})" value="" [value]="fields_query">
           <span class="travel-input-group-sep travel-border-gray relative z1 block"></span>
           <a href="travel-results.amp.html" class="travel-link travel-input travel-input-big line-height-2 link rounded-right nowrap text-decoration-none" on="
-              
+              tap:AMP.setState({
+                  ui_reset: false,
+                  ui_filterPane: false,
+                  query_query: fields_query,
+                  fields_query_edited: false,
+                  query_departure: fields_departure,
+                  fields_departure_edited: false,
+                  query_return: fields_return,
+                  fields_return_edited: false,
+                  query_maxPrice: fields_maxPrice,
+                  fields_maxPrice_edited: false,
+                  query_city: fields_city,
+                  fields_city_edited: false,
+                  query_type: fields_type,
+                  fields_type_edited: false,
+                  query_sort: fields_sort,
+                  fields_sort_edited: false,
+              })
+            ">
             Find my next adventure
           </a>
       </div>
