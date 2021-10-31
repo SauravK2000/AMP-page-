@@ -2,5 +2,5 @@
 5
 Accelerated Mobile Page for a blogging page 2
 1
-3
+36
 4
